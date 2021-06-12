@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "6a344633-2c17-4a33-a703-80c4821b23c7",
+		"name": "Vue Films",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Update image",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "user-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvSWQiOjIsImNyZWF0ZWRBdCI6MTYxMTk4MTExMSwiZXhwaXJhdGVkQXQiOjE2MTE5ODE0MTF9.MkEjY6Uhl_QLuRB6JSBfNL7W17FPju69jwkZ1BbEkPg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "\"the ring\"",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "\"scary film\"",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "score",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/G:/Mi artista favorito - Version Mobile/axel.jpg"
+						},
+						{
+							"key": "savedImage",
+							"value": "https://res.cloudinary.com/silvana/image/upload/v1623384234/dkpgoifv5dckvheb7mex.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/films/image/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"films",
+						"image",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new film",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Casablanca",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Classic movie",
+							"type": "text"
+						},
+						{
+							"key": "score",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "Michael Curtiz",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/G:/Escritorio/casablanca.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/films",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"films"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all films",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Casablanca",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Classic movie",
+							"type": "text"
+						},
+						{
+							"key": "score",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "Michael Curtiz",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/G:/Escritorio/casablanca.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/films",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"films"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete film by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Casablanca",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Classic movie",
+							"type": "text"
+						},
+						{
+							"key": "score",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "Michael Curtiz",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/G:/Escritorio/casablanca.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/films/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"films",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update film by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Casablanca",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Classic movie",
+							"type": "text"
+						},
+						{
+							"key": "score",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "Michael Curtiz",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/G:/Escritorio/casablanca.jpg",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/films/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"films",
+						"18"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
